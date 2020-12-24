@@ -8,12 +8,13 @@ on:
       - 'packages/container/**'
 
 defaults:
-  run: 
+  run:
     working-directory: packages/container
 
 jobs:
   build:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - run: npm install
